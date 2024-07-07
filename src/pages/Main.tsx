@@ -1,0 +1,29 @@
+import TypeCard from "../components/TypeCard";
+import imgCocina from '../images/cocina-type.jpg'
+import imgHabitacion from '../images/habitacion-type.jpeg'
+import imgBano from '../images/bano-type.jpeg'
+import imgOficina from '../images/oficina-type.jpeg'
+
+export default function Main(){
+    return (
+        <div id="main" className="section">
+            <TypeCard image={imgHabitacion} title="Habitaciones" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellat molestiae ullam facilis, non adipisci. Harum reiciendis ratione, quibusdam veritatis exercitationem sed accusantium assumenda labore repellat, doloremque, accusamus aliquid maiores."/>
+            <TypeCard image={imgCocina} title="Cocinas" reverse description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellat molestiae ullam facilis, non adipisci. Harum reiciendis ratione, quibusdam veritatis exercitationem sed accusantium assumenda labore repellat, doloremque, accusamus aliquid maiores."/>
+            <TypeCard image={imgBano} title="Baños"  description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellat molestiae ullam facilis, non adipisci. Harum reiciendis ratione, quibusdam veritatis exercitationem sed accusantium assumenda labore repellat, doloremque, accusamus aliquid maiores."/>
+            <TypeCard image={imgOficina} title="Oficinas" reverse description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellat molestiae ullam facilis, non adipisci. Harum reiciendis ratione, quibusdam veritatis exercitationem sed accusantium assumenda labore repellat, doloremque, accusamus aliquid maiores."/>
+
+            <TypeCard image={imgCocina} title="Cocinas" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellat molestiae ullam facilis, non adipisci. Harum reiciendis ratione, quibusdam veritatis exercitationem sed accusantium assumenda labore repellat, doloremque, accusamus aliquid maiores."/>
+            <TypeCard image={imgCocina} title="Baños" reverse description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellat molestiae ullam facilis, non adipisci. Harum reiciendis ratione, quibusdam veritatis exercitationem sed accusantium assumenda labore repellat, doloremque, accusamus aliquid maiores."/>
+            <TypeCard image={imgCocina} title="Habitaciones" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellat molestiae ullam facilis, non adipisci. Harum reiciendis ratione, quibusdam veritatis exercitationem sed accusantium assumenda labore repellat, doloremque, accusamus aliquid maiores."/>
+            <TypeCard image={imgCocina} title="Oficinas" reverse description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellat molestiae ullam facilis, non adipisci. Harum reiciendis ratione, quibusdam veritatis exercitationem sed accusantium assumenda labore repellat, doloremque, accusamus aliquid maiores."/>
+            <TypeCard image={imgCocina} title="Cocinas" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellat molestiae ullam facilis, non adipisci. Harum reiciendis ratione, quibusdam veritatis exercitationem sed accusantium assumenda labore repellat, doloremque, accusamus aliquid maiores."/>
+            <TypeCard image={imgCocina} title="Baños" reverse description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellat molestiae ullam facilis, non adipisci. Harum reiciendis ratione, quibusdam veritatis exercitationem sed accusantium assumenda labore repellat, doloremque, accusamus aliquid maiores."/>
+            <TypeCard image={imgCocina} title="Habitaciones" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellat molestiae ullam facilis, non adipisci. Harum reiciendis ratione, quibusdam veritatis exercitationem sed accusantium assumenda labore repellat, doloremque, accusamus aliquid maiores."/>
+            <TypeCard image={imgCocina} title="Oficinas" reverse description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellat molestiae ullam facilis, non adipisci. Harum reiciendis ratione, quibusdam veritatis exercitationem sed accusantium assumenda labore repellat, doloremque, accusamus aliquid maiores."/>
+            <TypeCard image={imgCocina} title="Cocinas" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellat molestiae ullam facilis, non adipisci. Harum reiciendis ratione, quibusdam veritatis exercitationem sed accusantium assumenda labore repellat, doloremque, accusamus aliquid maiores."/>
+            <TypeCard image={imgCocina} title="Baños" reverse description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellat molestiae ullam facilis, non adipisci. Harum reiciendis ratione, quibusdam veritatis exercitationem sed accusantium assumenda labore repellat, doloremque, accusamus aliquid maiores."/>
+            <TypeCard image={imgCocina} title="Habitaciones" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellat molestiae ullam facilis, non adipisci. Harum reiciendis ratione, quibusdam veritatis exercitationem sed accusantium assumenda labore repellat, doloremque, accusamus aliquid maiores."/>
+            <TypeCard image={imgCocina} title="Oficinas" reverse description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellat molestiae ullam facilis, non adipisci. Harum reiciendis ratione, quibusdam veritatis exercitationem sed accusantium assumenda labore repellat, doloremque, accusamus aliquid maiores."/>
+        </div>
+    )
+}
