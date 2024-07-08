@@ -78,14 +78,26 @@ main {
   display: flex;
   gap: 10px;
   flex-direction: column;
-  align-self: center;
   align-items: center;
+  justify-content: center;
   padding: 30px;
   text-align: justify;
 }
 
 .reverse{
   flex-direction: row-reverse;
+}
+
+.hidden{
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+}
+
+.show{
+  pointer-events: all;
+  transform: scale(1);
+  opacity: 1;
 }
 
 footer{
