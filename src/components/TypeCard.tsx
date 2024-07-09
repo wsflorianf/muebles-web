@@ -1,22 +1,78 @@
-import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material'
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Typography,
+} from '@mui/material'
+import { MySxProps } from '../types'
 
-interface TypeCardProps{
-    image: string
-    title: string
-    description: string
-    reverse?: boolean
+interface TypeCardProps {
+  image: string
+  title: string
+  description: string
+  reverse?: boolean
+  onClick: () => void
+}
+
+const cardSizes = {
+  height: {
+    xs: 600,
+    md: 400,
+  },
+}
+
+const styles: MySxProps = {
+  card: {
+    height: cardSizes.height,
+    width: '1000px',
+    maxWidth: '95%',
+    borderRadius: '20px',
+    transition: 'all 0.8s ease-out',
+  },
+  actionArea: {
+    display: 'flex',
+    height: cardSizes.height,
+  },
+  cardContent: {
+    boxSizing: 'border-box',
+     height: { md: '100%', xs: '50%' },
+     width: '100%',
+     display: 'flex',
+     gap: '20px',
+     flexDirection: 'column',
+     alignItems: 'center',
+     justifyContent: 'center',
+     padding: '30px',
+     textAlign: 'center',
+     
+    },
+  image: {
+    height: {md: '100%', xs: '50%' },
+    objectFit: {md: 'fill', xs: 'cover'}
+  },
 }
 
 export default function TypeCard(props: TypeCardProps) {
-
   return (
-    <Card className='hidden' sx={{height: '400px', width: '1000px', maxWidth: '90%', borderRadius: '20px', transition: 'all 0.8s ease-out'}}>
-      <CardActionArea className='type-card' sx={{display: 'flex', height: '400px', flexDirection: props.reverse?'row-reverse':'row'}}>
-      <CardMedia component='img' image={props.image} alt='n'/>
-      <CardContent  sx={{height: '100%', width: '100%'}}>
-      <Typography component='div' variant='h3' fontWeight={400}>{props.title}</Typography>
-        <Typography component={'div'}>{props.description}</Typography>
-      </CardContent>
+    <Card className='hidden' sx={styles.card}>
+      <CardActionArea
+        onClick={props.onClick}
+        sx={{
+          ...styles.actionArea,
+          flexDirection: {
+            xs: 'column-reverse',
+            md: props.reverse ? 'row-reverse' : 'row',
+          },
+        }}
+      >
+        <CardMedia sx={styles.image} component='img' image={props.image} alt={props.title} />
+        <CardContent sx={styles.cardContent}>
+          <Typography component='div' variant='h3' fontWeight={400} fontSize={{xs: 36, md: 48}}>
+            {props.title}
+          </Typography>
+          <Typography fontSize={24} component={'div'}>{props.description}</Typography>
+        </CardContent>
       </CardActionArea>
     </Card>
   )
