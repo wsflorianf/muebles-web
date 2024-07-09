@@ -1,9 +1,10 @@
 import './App.css'
-import logo from './assets/icon.svg'
+import logo from './assets/bar-icon.svg'
 import { Link, Outlet, useNavigate } from 'react-router-dom'
 import { Button, ThemeProvider, Typography } from '@mui/material'
 import { theme } from './theme'
 import Footer from './components/Footer'
+import WhatsappButton from './components/WhatsappButton'
 
 function App() {
 
@@ -15,24 +16,17 @@ function App() {
         <div id='banner'>
           <img src={logo} alt='logo WF' />
           
-          <Typography style={{cursor: 'pointer'}} onClick={()=>navigate('')} component='h1' variant='h4' color={'primary.contrastText'}>
-            Mobiliario WF
+          <Typography style={{cursor: 'pointer'}} onClick={()=>navigate('')} component='h1' variant='h3' color={'primary.contrastText'} sx={{fontSize: {xs: 24, md: 40}}}>
+            Muebles WF
           </Typography>
           
         </div>
         
-        <div id='controls'>
-          <Link to={''}>
-            <Button>Catálogo</Button>
-          </Link>
-          <Link to={'otro'}>
-            <Button>Contacto</Button>
-          </Link>
-        </div>
       </nav>
       <main>
         <Outlet />
       </main>
+      <WhatsappButton/>
       <Footer/>
     </ThemeProvider>
   )
