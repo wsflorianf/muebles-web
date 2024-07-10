@@ -11,31 +11,33 @@ export default function Main() {
   const navigate = useNavigate()
 
   useEffect(() => {
+    //Elementos que serán observados para aparecer con efecto 'Fade In'
     const hiddenCards = document.querySelectorAll('.hidden')
 
+    //Opciones del observador
     const options: IntersectionObserverInit = {
       root: null,
       threshold: 0.5,
     }
 
+    //Callback del observador
     const callback: IntersectionObserverCallback = (entries, observer) => {
       entries.forEach((entry) => {
         // Si el elemento observado entra en la pantalla
         if (entry.isIntersecting) {
-          // Hacemos algo, por ejemplo, cambiar el color de fondo del elemento
+          //Clase que lo hace visible
           entry.target.classList.add('show')
 
-          // Podrías realizar cualquier acción aquí cuando el elemento entra en la pantalla
-          console.log('El elemento ha entrado en la pantalla')
-
-          // Después de hacer lo que necesitas, puedes dejar de observar el elemento si es necesario
+          // Dejar de observar el elemento
           observer.unobserve(entry.target)
         }
       })
     }
 
+    //Crear el observador
     const cardsObserver = new IntersectionObserver(callback, options)
 
+    //Observar cada elemento que se requiere
     hiddenCards.forEach((card) => cardsObserver.observe(card))
   }, [])
 
@@ -46,9 +48,9 @@ export default function Main() {
         variant='h2'
         className='title'
         fontWeight={500}
-        fontSize={{ xs: 40, md: 60 }}
+        fontSize={{ xs: 34, md: 60 }}
       >
-        Tipos de muebles
+        Variedad en Muebles
       </Typography>
       <Divider flexItem />
       <TypeCard
