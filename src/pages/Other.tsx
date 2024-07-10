@@ -1,9 +1,9 @@
-import { Typography } from "@mui/material";
+import Gallery from '../components/Gallery'
 
-export default function Other(){
-    return(
-        <div className="section">
-            <Typography component='h2' variant="h2" fontWeight={400}>Otros</Typography>
-        </div>
-    )
+export default function Other() {
+  return (
+    <div className='section'>
+      <Gallery title='Otros'></Gallery>
+    </div>
+  )
 }

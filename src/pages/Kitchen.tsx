@@ -1,9 +1,9 @@
-import { Typography } from "@mui/material";
+import Gallery from '../components/Gallery'
 
-export default function Kitchen(){
-    return(
-        <div className="section">
-            <Typography component='h2' variant="h2" fontWeight={400}>Cocinas</Typography>
-        </div>
-    )
+export default function Kitchen() {
+  return (
+    <div className='section'>
+      <Gallery title='Cocinas'></Gallery>
+    </div>
+  )
 }

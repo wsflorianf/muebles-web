@@ -1,9 +1,11 @@
-import { Typography } from "@mui/material";
+import Gallery from "../components/Gallery";
 
 export default function Bathroom(){
     return(
         <div className="section">
-            <Typography component='h2' variant="h2" fontWeight={400}>Baños</Typography>
+            <Gallery title="Baños">
+                
+                </Gallery>
         </div>
     )
 }
