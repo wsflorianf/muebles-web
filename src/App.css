@@ -46,7 +46,7 @@ nav > *{
 }
 
 .title{
-    background: -webkit-linear-gradient(#877566 40%, #bab7b1);
+    background: -webkit-linear-gradient(#b4a293 30%, #6e6658);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -57,10 +57,11 @@ main {
 
 .section {
   min-height: 85vh;
-  padding-top: 10px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.4s ease-out forwards;
 }
 
 #error{
@@ -108,7 +109,7 @@ footer{
 @media screen and (max-width: 900px){
 
   nav{
-    height: 8vh;
+    height: 10vh;
   }
 
   nav > *{
@@ -117,5 +118,14 @@ footer{
 
   main {
     width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
