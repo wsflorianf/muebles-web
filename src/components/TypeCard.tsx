@@ -17,7 +17,8 @@ interface TypeCardProps {
 
 const cardSizes = {
   height: {
-    xs: 600,
+    xs: 550,
+    sm: 700,
     md: 400,
   },
 }
@@ -48,7 +49,7 @@ const styles: MySxProps = {
      
     },
   image: {
-    height: {md: '100%', xs: '50%' },
+    height: {md: '100%', sm: '70%', xs: '50%' },
     objectFit: {md: 'fill', xs: 'cover'}
   },
 }
@@ -71,7 +72,7 @@ export default function TypeCard(props: TypeCardProps) {
           <Typography component='div' variant='h3' fontWeight={400} fontSize={{xs: 36, md: 48}}>
             {props.title}
           </Typography>
-          <Typography fontSize={24} component={'div'}>{props.description}</Typography>
+          <Typography fontSize={{xs: 20, md: 24}} component={'div'}>{props.description}</Typography>
         </CardContent>
       </CardActionArea>
     </Card>
