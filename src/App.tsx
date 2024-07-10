@@ -1,14 +1,20 @@
 import './App.css'
 import logo from './assets/bar-icon.svg'
-import { Link, Outlet, useNavigate } from 'react-router-dom'
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { Button, ThemeProvider, Typography } from '@mui/material'
 import { theme } from './theme'
 import Footer from './components/Footer'
 import WhatsappButton from './components/WhatsappButton'
+import { useEffect } from 'react'
 
 function App() {
 
   const navigate = useNavigate()
+  const location = useLocation()
+
+  useEffect(()=>{
+    scrollTo(0,0)
+  },[location.pathname])
 
   return (
     <ThemeProvider theme={theme}>
