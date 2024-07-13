@@ -69,7 +69,7 @@ export default function TypeCard(props: TypeCardProps) {
       >
         <CardMedia sx={styles.image} component='img' image={props.image} alt={props.title} />
         <CardContent sx={styles.cardContent}>
-          <Typography component='div' variant='h3' fontWeight={400} fontSize={{xs: 36, md: 48}}>
+          <Typography textAlign='center' component='div' variant='h3' fontWeight={{xs: 500, md: 400}} fontSize={{xs: 28,  sm: 38, md: 48}}>
             {props.title}
           </Typography>
           <Typography fontSize={{xs: 20, md: 24}} component={'div'}>{props.description}</Typography>
