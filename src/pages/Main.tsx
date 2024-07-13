@@ -41,6 +41,7 @@ export default function Main() {
     hiddenCards.forEach((card) => cardsObserver.observe(card))
   }, [])
 
+
   return (
     <div id='main' className='section'>
       <Typography
@@ -48,7 +49,7 @@ export default function Main() {
         variant='h2'
         className='title'
         fontWeight={500}
-        fontSize={{ xs: 34, md: 60 }}
+        fontSize={{ xs: 32, sm: 48 ,md: 60 }}
       >
         Variedad en Muebles
       </Typography>
@@ -89,6 +90,7 @@ export default function Main() {
         title='Otros'
         description='Explora nuestras diversas soluciones de mobiliario para cualquier otra área de tu hogar o negocio.'
       />
+      
     </div>
   )
 }
