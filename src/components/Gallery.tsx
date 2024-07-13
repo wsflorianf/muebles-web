@@ -1,22 +1,54 @@
-import { Box, SxProps, Typography } from "@mui/material";
-import { ReactNode } from "react";
+import { Box, SxProps, Typography } from '@mui/material'
+import { useState } from 'react'
+import { Product, ProductsData } from '../types'
+import ProductCard from './ProductCard'
+import ProductModal from './ProductModal'
+
+interface GalleryProps {
+  title?: string
+  data: ProductsData
+}
 
 const styles: SxProps = {
+    display: 'flex',
+    flexDirection: {xs: 'column', md: 'row'},
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    gap: '30px',
+    justifyContent: 'center',
+    marginTop: '30px',
+    maxWidth: '100vw',
+  }
 
-}
+export default function Gallery({ title, data }: GalleryProps) {
+  const [open, setOpen] = useState(false)
+  const [selectedProduct, setSelectedProduct] = useState<Product>()
 
-interface GalleryProps{
-    title: string
-    children?: ReactNode
-}
+  const handleOpen = (product: Product) => {
+    setSelectedProduct(product)
+    setOpen(true)
+  }
 
-export default function Gallery({title, children}: GalleryProps){
-    return (
-        <>
-        <Typography component='h2' variant="h2" fontWeight={400}>{title}</Typography>
-        <Box sx={styles}>
-            {children}
-        </Box>
-        </>
-    )
+  const handleClose = () => {
+    setOpen(false)
+    setSelectedProduct(undefined)
+  }
+
+  return (
+    <>
+      <Typography component='h2' variant='h2' fontSize={{xs: 32, md: 48}} fontWeight={{xs: 500,md: 400}}>
+        {title}
+      </Typography>
+      <Box sx={styles}>
+        {data.products.map((product) => {
+          return (
+            <ProductCard product={product} key={product.id} path={data.path} onClick={()=>handleOpen(product)}/>
+          )
+        })}
+      </Box>
+
+        <ProductModal open={open} onClose={handleClose} path={data.path} product={selectedProduct} />
+      
+    </>
+  )
 }
