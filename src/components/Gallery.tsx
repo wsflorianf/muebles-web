@@ -1,4 +1,4 @@
-import { Box, SxProps, Typography } from '@mui/material'
+import { Box, Divider, SxProps, Typography } from '@mui/material'
 import { useState } from 'react'
 import { Product, ProductsData } from '../types'
 import ProductCard from './ProductCard'
@@ -36,9 +36,10 @@ export default function Gallery({ title, data }: GalleryProps) {
 
   return (
     <>
-      <Typography component='h2' variant='h2' fontSize={{xs: 32, md: 48}} fontWeight={{xs: 500,md: 400}}>
+      <Typography className='title' component='h2' variant='h2' marginBottom={2} fontSize={{xs: 32, md: 48}} fontWeight={500}>
         {title}
       </Typography>
+      <Divider flexItem />
       <Box sx={styles}>
         {data.products.map((product) => {
           return (
