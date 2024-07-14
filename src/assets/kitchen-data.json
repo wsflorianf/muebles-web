@@ -1,0 +1,78 @@
+{
+    "path": "/src/images/kitchen/",
+    "products": [
+        {
+            "id": 1,
+            "name": "Closet para ropa gris",
+            "description": "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+            "images": [
+                "1-1.jpg",
+                "1-2.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "producto más largo",
+            "description": "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+            "images": [
+                "2-1.jpg",
+                "2-2.jpg",
+                "2-3.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "product 3",
+            "description": "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+            "images": [
+                "3-1.jpg",
+                "3-2.jpg",
+                "3-3.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "producto más largo",
+            "description": "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+            "images": [
+                "4-1.jpg",
+                "4-2.jpg",
+                "4-3.jpg"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "producto más largo",
+            "description": "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+            "images": [
+                "5-1.jpg",
+                "5-2.jpg"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "producto más largo",
+            "description": "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+            "images": [
+                "6-1.jpg"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "producto más largo",
+            "description": "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+            "images": [
+                "7-1.jpg",
+                "7-2.jpg"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "producto más largo",
+            "description": "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+            "images": [
+                "8-1.jpg"
+            ]
+        }
+    ]
+}

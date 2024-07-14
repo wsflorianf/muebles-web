@@ -1,0 +1,37 @@
+{
+    "path": "/src/images/office/",
+    "products": [
+        {
+            "id": 1,
+            "name": "Closet para ropa gris",
+            "description": "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+            "images": [
+                "1-1.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "producto más largo",
+            "description": "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+            "images": [
+                "2-1.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "product 3",
+            "description": "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+            "images": [
+                "3-1.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "producto más largo",
+            "description": "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+            "images": [
+                "4-1.jpg"
+            ]
+        }
+    ]
+}
