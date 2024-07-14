@@ -16,8 +16,10 @@
     "@mui/material": "^5.15.21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-material-ui-carousel": "^3.4.2",
+    "react-image-magnify": "^2.7.4",
     "react-router-dom": "^6.24.1",
+    "react-swipeable-views": "^0.14.0",
+    "react-swipeable-views-utils": "^0.14.0",
     "zustand": "^4.5.4"
   },
   "devDependencies": {
@@ -25,6 +27,9 @@
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
+    "@types/react-image-magnify": "^2.7.4",
+    "@types/react-swipeable-views": "^0.13.5",
+    "@types/react-swipeable-views-utils": "^0.13.7",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
