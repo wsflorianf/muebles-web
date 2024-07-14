@@ -18,14 +18,14 @@ const styles: MySxProps = {
     borderRadius: '20px',
     maxWidth: '90%',
     transition: 'transform 0.2s',
-    ':hover': {md: { transform: 'scale(1.1)' }},
+    ':hover': {md: { transform: 'scale(1.05)' }},
   },
   container: {
     height: 400,
   },
   image: {
     display: 'block',
-    height: '80%',
+    height: '85%',
     width: 'auto',
     margin: '0 auto',
     borderRadius: '10px',
