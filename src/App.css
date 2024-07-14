@@ -86,18 +86,9 @@ main {
   opacity: 1;
 }
 
-.carousel-img{
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.carousel-img img{
-  display: block;
+.carousel-img div{
   height: 100%;
-  max-width: 100%;
-  transition: none;
-  margin: 0 auto;
- }
+}
 
 footer{
   width: 100%;
@@ -117,6 +108,10 @@ footer{
 
 #whatsapp-icon img{
   height: 70px;
+}
+
+.maximize{
+  transform: scale(3);
 }
 
 @media screen and (max-width: 900px){
