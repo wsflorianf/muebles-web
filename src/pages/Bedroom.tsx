@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Gallery from "../components/Gallery";
 import data from '../assets/bedroom-data.json'
 
