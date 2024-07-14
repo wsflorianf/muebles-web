@@ -28,7 +28,8 @@ const styles: MySxProps = {
     height: '85%',
     width: 'auto',
     margin: '0 auto',
-    borderRadius: '10px',
+    borderBottomLeftRadius: '10px',
+    borderBottomRightRadius: '10px',
   },
   text: {
     fontSize: 20,
