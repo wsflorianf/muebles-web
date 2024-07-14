@@ -56,14 +56,14 @@ export default function Main() {
       <Divider flexItem />
       <TypeCard
         image={imgHabitacion}
-        onClick={() => navigate('bedroom')}
+        onClick={() => navigate('habitacion')}
         title='Habitaciones'
         description='Transformamos tus espacios personales en santuarios de confort y estilo con nuestros muebles personalizados para habitaciones.'
       />
 
       <TypeCard
         image={imgCocina}
-        onClick={() => navigate('kitchen')}
+        onClick={() => navigate('cocina')}
         title='Cocinas'
         reverse
         description='Descubre nuestras soluciones de mobiliario para cocinas, combinando funcionalidad y diseño para crear el corazón de tu hogar.'
@@ -71,14 +71,14 @@ export default function Main() {
 
       <TypeCard
         image={imgBano}
-        onClick={() => navigate('bathroom')}
+        onClick={() => navigate('baño')}
         title='Baños'
         description='Dale un toque de elegancia y modernidad a tu baño con nuestros muebles diseñados a medida.'
       />
 
       <TypeCard
         image={imgOficina}
-        onClick={() => navigate('office')}
+        onClick={() => navigate('oficina')}
         title='Oficinas'
         reverse
         description='Optimizamos tu espacio de trabajo con muebles ergonómicos y sofisticados, perfectos para cualquier oficina.'
@@ -86,7 +86,7 @@ export default function Main() {
 
       <TypeCard
         image={''}
-        onClick={() => navigate('other')}
+        onClick={() => navigate('otro')}
         title='Otros'
         description='Explora nuestras diversas soluciones de mobiliario para cualquier otra área de tu hogar o negocio.'
       />

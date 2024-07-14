@@ -20,23 +20,23 @@ const routes = createBrowserRouter([
         element: <Main />,
       },
       {
-        path: 'bedroom',
+        path: 'habitacion',
         element: <Bedroom/>,
       },
       {
-        path: 'kitchen',
+        path: 'cocina',
         element: <Kitchen/>,
       },
       {
-        path: 'bathroom',
+        path: 'baño',
         element: <Bathroom/>,
       },
       {
-        path: 'office',
+        path: 'oficina',
         element: <Office/>,
       },
       {
-        path: 'other',
+        path: 'otro',
         element: <Other/>,
       },
       {
