@@ -48,7 +48,7 @@ export default function ProductCard({
       <CardActionArea sx={styles.container} onClick={onClick}>
         <CardMedia
           component='img'
-          image={path + product.images[0]}
+          image={import.meta.env.BASE_URL+path + product.images[0]}
           alt={product.name}
           sx={styles.image}
         />

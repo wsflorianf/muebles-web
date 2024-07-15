@@ -49,7 +49,7 @@ export default function ImgCarousel({ product, path, sx }: ImgCarouselTypes) {
               overflow: 'hidden',
               width: 'auto',
             }}
-            src={path + image}
+            src={import.meta.env.BASE_URL+path + image}
             alt={product.name}
           />
         ))}
