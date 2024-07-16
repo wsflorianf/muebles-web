@@ -46,7 +46,7 @@ nav > *{
 }
 
 .title{
-    background: -webkit-linear-gradient(#b4a293 30%, #6e6658);
+    background: -webkit-linear-gradient(#c6a382 20%, #432d1e);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
