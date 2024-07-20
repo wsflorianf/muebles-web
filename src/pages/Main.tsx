@@ -3,6 +3,7 @@ import imgCocina from '../assets/cocina-type2.jpeg'
 import imgHabitacion from '../assets/habitacion-type.jpeg'
 import imgBano from '../assets/bano-type.jpeg'
 import imgOficina from '../assets/oficina-type.jpeg'
+import imgOtro from '../assets/otro-type.jpeg'
 import { useEffect } from 'react'
 import { Divider, Typography } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
@@ -85,7 +86,7 @@ export default function Main() {
       />
 
       <TypeCard
-        image={''}
+        image={imgOtro}
         onClick={() => navigate('otro')}
         title='Otros'
         description='Explora nuestras diversas soluciones de mobiliario para cualquier otra área de tu hogar o negocio.'
