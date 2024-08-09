@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { CSSProperties, MouseEvent, useState } from 'react'
 import { Product } from '../types'
 import { IconButton, MobileStepper, Paper, SxProps, Theme } from '@mui/material'
 import SwipeableViews from 'react-swipeable-views'
@@ -16,6 +16,21 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
 export default function ImgCarousel({ product, path, sx }: ImgCarouselTypes) {
   const [activeStep, setActiveStep] = useState(0)
   const maxSteps = product ? product.images.length : 0
+  const [zoomImage, setZoomImage] = useState<CSSProperties>({})
+
+  const handleZoomMove = (e: MouseEvent) => {
+    const target = e.target as HTMLElement
+    const rects = target.getBoundingClientRect()
+
+
+
+    const x = Math.ceil((e.clientX-rects.x)*100/rects.width)
+    const y = Math.ceil((e.clientY-rects.y)*100/rects.height)
+    console.log(x,y)
+
+    setZoomImage({transform: 'scale(4)', transformOrigin: `${x}% ${y}%`})
+   
+  }
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1)
@@ -33,25 +48,37 @@ export default function ImgCarousel({ product, path, sx }: ImgCarouselTypes) {
       <AutoPlaySwipeableViews
         index={activeStep}
         onChangeIndex={handleStepChange}
+        
         enableMouseEvents
         style={{ flex: 9 }}
-        interval={5000}
+        interval={zoomImage.transform?120000:5000}
         className='carousel-img'
       >
         {product?.images.map((image, index) => (
-          <img
+          <div
             key={index}
             style={{
-              maxHeight: '100%',
-              maxWidth: '100%',
-              display: 'block',
-              margin: 'auto',
+              display: 'flex',
               overflow: 'hidden',
-              width: 'auto',
+              margin: 'auto',
+              width: '100%',
             }}
-            src={import.meta.env.BASE_URL+path + image}
-            alt={product.name}
-          />
+            onMouseMove={handleZoomMove}
+            onMouseLeave={() => setZoomImage({})}
+          >
+            <img
+              style={{
+                maxHeight: '100%',
+                maxWidth: '100%',
+                margin: 'auto',
+                pointerEvents: "none",
+                transition: "all 0.05s",
+                ...zoomImage,
+              }}
+              src={import.meta.env.BASE_URL + path + image}
+              alt={product.name}
+            />
+          </div>
         ))}
       </AutoPlaySwipeableViews>
       <MobileStepper
