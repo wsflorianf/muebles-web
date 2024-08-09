@@ -3,8 +3,8 @@
     "products": [
         {
             "id": 1,
-            "name": "Closet para ropa gris",
-            "description": "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+            "name": "Closet empotrado café",
+            "description": "Se trata de un clóset empotrado de estilo moderno, diseñado para aprovechar al máximo el espacio de un rincón. Cuenta con una combinación de estantes abiertos y cerrados, así como una barra para colgar ropa. La parte izquierda ofrece una vista abierta de los estantes, mientras que la derecha cuenta con puertas que ocultan el interior, brindando un aspecto más ordenado y funcional. Su diseño sencillo y atemporal lo hace versátil y adaptable a diferentes estilos de decoración.",
             "images": [
                 "1-1.jpg",
                 "1-2.jpg"
@@ -12,8 +12,8 @@
         },
         {
             "id": 2,
-            "name": "producto más largo",
-            "description": "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+            "name": "Mueble modular a medida con cama",
+            "description": "Este mueble modular, diseñado a medida, es una solución innovadora y adaptable para personas con necesidades especiales. La cama elevada, combinada con estanterías y espacios de almacenamiento integrados, crea un entorno seguro y funcional. Su diseño minimalista y los materiales naturales proporcionan un ambiente tranquilo y acogedor, ideal para el descanso y el juego.",
             "images": [
                 "2-1.jpg",
                 "2-2.jpg",
@@ -22,8 +22,8 @@
         },
         {
             "id": 3,
-            "name": "product 3",
-            "description": "Una descipción muy larga acerca de este mueble con ciertas medidas y en ciertos materiales",
+            "name": "Mueble con estantería",
+            "description": "Con una estantería superior abierta para exhibir objetos y un mueble inferior con puertas corredizas para guardar, ofrece un espacio versátil y organizado. Su diseño minimalista y adaptable lo hace perfecto para cualquier ambiente, ya sea una oficina, una sala de estar o un dormitorio.",
             "images": [
                 "3-1.jpg"
             ]
