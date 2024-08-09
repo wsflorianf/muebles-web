@@ -22,12 +22,13 @@ const styles: MySxProps = {
   },
   container: {
     height: 400,
+    display: 'flex',
+    flexDirection: 'column',
   },
   image: {
     display: 'block',
     height: '85%',
     width: 'auto',
-    margin: '0 auto',
     borderBottomLeftRadius: '10px',
     borderBottomRightRadius: '10px',
   },

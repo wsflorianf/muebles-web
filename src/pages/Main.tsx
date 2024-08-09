@@ -50,7 +50,8 @@ export default function Main() {
         variant='h2'
         className='title'
         fontWeight={500}
-        fontSize={{ xs: 32, sm: 48 ,md: 60 }}
+        textAlign='center'
+        fontSize={{ xs: 30, sm: 48 ,md: 60 }}
       >
         Variedad en Muebles
       </Typography>

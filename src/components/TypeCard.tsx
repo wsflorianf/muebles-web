@@ -40,7 +40,7 @@ const styles: MySxProps = {
      height: { md: '100%', xs: '50%' },
      width: '100%',
      display: 'flex',
-     gap: '20px',
+     gap: '16px',
      flexDirection: 'column',
      alignItems: 'center',
      justifyContent: 'center',

@@ -83,7 +83,6 @@ export default function ProductModal({
           <Typography
             fontSize={{ xs: 24, md: 48 }}
             fontWeight={500}
-            textTransform={'capitalize'}
             textAlign={'center'}
             component='div'
           >
