@@ -17,7 +17,7 @@ const styles: MySxProps = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: '95%',
-    height: '85vh',
+    height: '90vh',
     maxWidth: 1200,
     bgcolor: 'background.paper',
     boxShadow: 24,
@@ -30,7 +30,6 @@ const styles: MySxProps = {
     flexDirection: { xs: 'column-reverse', md: 'row' },
   },
   closeButton: {
-    display: { xs: 'none', md: 'block' },
     position: 'absolute',
     top: 8,
     right: 8,
@@ -50,6 +49,7 @@ const styles: MySxProps = {
     height: '100%',
     alignItems: 'center',
     paddingX: 4,
+    overflow: 'auto'
   },
 }
 
@@ -76,7 +76,6 @@ export default function ProductModal({
         <IconButton sx={styles.closeButton} onClick={onClose}>
           <CloseRounded />
         </IconButton>
-
         <ImgCarousel sx={styles.carousel} product={product} path={path} />
 
         <Box sx={styles.info}>
